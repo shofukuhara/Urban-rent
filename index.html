@@ -7,5 +7,71 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>Urban rent</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__hamburger"><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span>
+      </div>
+      <ul class="header__list">
+        <li class="header__list-item"><a class="header__list-link" href="#">CONCEPT</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#">NEWS</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#">FIRST</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#">PROPERTY</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#">CONTACT</a></li>
+      </ul>
+    </header>
+    <div class="bg">
+      <div class="bg__box">
+        <p class="bg__box-catch">都会の利便性<br>閑静な暮らし</p>
+      </div>
+    </div>
+    <main class="main">
+      <section class="live wrapper">
+        <div class="live__flex">
+          <div class="live__textbox inview fadeIn">
+            <h2 class="live__sectitle"><span class="live__sectitl-en">LIVE</span><span class="live__sectitl-ja">都会で暮らす</span></h2>
+            <div class="live__text">
+              <p>東京は家賃が高いイメージがあると思います。<br>しかし、意外と家賃相場が安い場所もあります。<br>そういった場所を皆様に提供できればと思っております。</p>
+            </div>
+          </div>
+          <div class="live__imgbox"><img class="live__imgbox-img" src="src/img/live_large.jpg" alt=""></div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__flex">
+          <div class="news__textbox inview fadeIn">
+            <h2 class="news__sectitle"><span class="news__sectitle-en">NEWS</span><span class="news__sectitle-ja">お知らせ</span></h2>
+            <ul class="news__list">
+              <li class="news__item"><a class="news__item-link" href="#"><img class="news__item-img" src="src/img/news_2_large.jpg" alt=""><span class="news__item-title">桜の季節ですね</span><span class="news__item-date">2022.07.01</span></a></li>
+              <li class="news__item"><a class="news__item-link" href="#"><img class="news__item-img" src="src/img/news_3_large.jpg" alt=""><span class="news__item-title">マイブーム</span><span class="news__item-date">2022.07.20</span></a></li>
+            </ul>
+            <div class="news__box"><a class="btn" href="#"></a></div>
+          </div>
+          <div class="news__imgbox mask">
+            <picture>
+              <source media="(min-width: 1025px)" srcset="src/img/news_1_large.jpg">
+              <source media="(min-width: 600px) and (max-width: 1025px)" srcset="src/img/news_1_small.jpg">
+              <source media="(max-width: 599px)" srcset="src/img/news_1_small.jpg"><img class="news__imgbox-img" src="src/img/news_1_large.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="first wrapper">
+        <div class="first__flex">
+          <div class="first__textbox inview fadeIn">
+            <h2 class="first__sectitle"><span class="first__sectitle-en">FIRST</span><span class="first__sectitle-ja">初めての方へ</span></h2>
+            <div class="first__text">
+              <p>初めてのお部屋探し、不動産へ行くのは緊張しますよね。<br>弊社は丁寧に、仕事をし強引な営業はしません。<br>お客様の納得がするまでしっかりサポート致します。</p>
+            </div>
+          </div>
+          <div class="first__imgbox mask">
+            <picture>
+              <source media="(min-width: 1025px)" srcset="src/img/first_large.jpg">
+              <source media="(min-width: 600px) and (max-width: 1025px)" srcset="src/img/first_small.jpg">
+              <source media="(max-width: 599px)" srcset="src/img/first_small.jpg"><img class="first__imgbox-img" src="src/img/first_large.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

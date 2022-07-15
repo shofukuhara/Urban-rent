@@ -7,3 +7,75 @@ html(lang="ja")
     link(rel="stylesheet", href="src/css/style.css")
     title Urban rent
   body
+    header.header
+      .header__hamburger
+        - for (let x = 0; x < 3; x++)
+          span.header__hamburger-line
+      ul.header__list
+        - let list = ['CONCEPT', 'NEWS', 'FIRST', 'PROPERTY','CONTACT',]
+        each  item in list
+          li.header__list-item
+            a(href="#" class="header__list-link") #{item}
+    .bg
+      .bg__box
+        p.bg__box-catch 都会の利便性
+          br
+          | 閑静な暮らし
+    main.main
+      section.live.wrapper
+        .live__flex
+          .live__textbox.inview.fadeIn
+            h2.live__sectitle
+              span.live__sectitl-en LIVE
+              span.live__sectitl-ja 都会で暮らす
+            .live__text
+              p 東京は家賃が高いイメージがあると思います。
+                br
+                | しかし、意外と家賃相場が安い場所もあります。
+                br
+                | そういった場所を皆様に提供できればと思っております。
+          .live__imgbox
+            img(src="src/img/live_large.jpg", alt="" class="live__imgbox-img")
+      section.news
+        .news__flex
+          .news__textbox.inview.fadeIn
+            h2.news__sectitle
+              span.news__sectitle-en NEWS
+              span.news__sectitle-ja お知らせ
+            ul.news__list
+              li.news__item
+                a(href="#" class="news__item-link")
+                  img(src="src/img/news_2_large.jpg", alt="" class="news__item-img")
+                  span.news__item-title 桜の季節ですね
+                  span.news__item-date 2022.07.01
+              li.news__item
+                a(href="#" class="news__item-link")
+                  img(src="src/img/news_3_large.jpg", alt="" class="news__item-img")
+                  span.news__item-title マイブーム
+                  span.news__item-date 2022.07.20
+            .news__box
+              a(href="#" class="btn")
+          .news__imgbox.mask
+            picture
+              source(media="(min-width: 1025px)", srcset="src/img/news_1_large.jpg")
+              source(media="(min-width: 600px) and (max-width: 1025px)", srcset="src/img/news_1_small.jpg")
+              source(media="(max-width: 599px)", srcset="src/img/news_1_small.jpg")
+              img(src="src/img/news_1_large.jpg", alt="" class="news__imgbox-img")
+      section.first.wrapper
+        .first__flex
+          .first__textbox.inview.fadeIn
+            h2.first__sectitle
+              span.first__sectitle-en FIRST
+              span.first__sectitle-ja 初めての方へ
+            .first__text
+              p 初めてのお部屋探し、不動産へ行くのは緊張しますよね。
+                br
+                | 弊社は丁寧に、仕事をし強引な営業はしません。
+                br
+                | お客様の納得がするまでしっかりサポート致します。
+          .first__imgbox.mask
+            picture
+              source(media="(min-width: 1025px)", srcset="src/img/first_large.jpg")
+              source(media="(min-width: 600px) and (max-width: 1025px)", srcset="src/img/first_small.jpg")
+              source(media="(max-width: 599px)", srcset="src/img/first_small.jpg")
+              img(src="src/img/first_large.jpg", alt="" class="first__imgbox-img")
