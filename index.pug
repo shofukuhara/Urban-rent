@@ -79,3 +79,108 @@ html(lang="ja")
               source(media="(min-width: 600px) and (max-width: 1025px)", srcset="src/img/first_small.jpg")
               source(media="(max-width: 599px)", srcset="src/img/first_small.jpg")
               img(src="src/img/first_large.jpg", alt="" class="first__imgbox-img")
+      section.about
+        .about__flex 
+          .about__textbox.inview.fadeIn
+            .about__sectitle
+              span.about__sectitle-en ABOUT
+              span.about__sectitle-ja Urban rentについ
+            ul.about__list
+              li.about__item
+                a(href="#" class="about__item-link") 
+                  span.about__item-number 01
+                  span.about__item-number Urban rentが
+                  br
+                  | 大切にしていること
+              li.about__item
+                a(href="#" class="about__item-link") 
+                  span.about__item-number 02
+                  span.about__item-number ヒアリングから物件のご提案
+              li.about__item
+                a(href="#" class="about__item-link") 
+                  span.about__item-number 03
+                  span.about__item-number ご希望の最寄り駅の
+                  br
+                  | 雰囲気や特徴をご説明
+              li.about__item
+                a(href="#" class="about__item-link") 
+                  span.about__item-number 04
+                  span.about__item-number 入居後の
+                  br
+                  | アフターサポート
+          .about__imgbox.mask
+            picture
+              source(media="(min-width: 1025px)", srcset="src/img/about_large.jpg")
+              source(media="(min-width: 600px) and (max-width: 1025px)", srcset="src/img/about_small.jpg")
+              source(media="(max-width: 599px)", srcset="src/img/about_small.jpg")
+              img(src="src/img/about_large.jpg", alt="" class="about__imgbox-img")
+      section.property.wrapper.inview.fadeIn
+        .property__flex
+          .property__textbox
+            h2.property__sectitle
+              span.property__sectitle-en PROPERTY
+              span.property__sectitle-ja 物件について
+            .property__text
+              p 初めてのお部屋探し、不動産へ行くのは緊張しますよね。弊社は丁寧に、仕事をし強引な営業はしません。
+                br
+                | お客様の納得がするまでしっかりサポート致します。
+          .property__imgbox
+            picture
+              source(media="(min-width: 1025px)", srcset="src/img/property_1_large.jpg")
+              source(media="(min-width: 600px) and (max-width: 1025px)", srcset="src/img/property_1_small.jpg")
+              source(media="(max-width: 599px)", srcset="src/img/property_1_small.jpg")
+              img(src="src/img/property_1_large.jp", alt="" class="property__imgbox-img")
+        ul.property__list
+          li.property__item
+            a(href="#" class="property__item-link")
+              img(src="src/img/property_2_large.jpg", alt="" class="property__imgbox-img")
+              span.property__item-title 押上駅周辺物件
+              p.property__item-text 押上駅は、地下鉄を始めとする4路線の乗り入れがあるため、都心への通勤だけでなく郊外へのアクセスも含め、とても便利な立地です
+          li.property__item
+            a(href="#" class="property__item-link")
+              img(src="src/img/property_3_large.jpg", alt="" class="property__imgbox-img")
+              span.property__item-title 荻窪駅周辺物件
+              p.property__item-text 荻窪は、穏やかな雰囲気が特徴の街で、女性でも安心して一人暮らしができるほど治安が良い、とても住みやすい街となっています。
+          li.property__item
+            a(href="#" class="property__item-link")
+              img(src="src/img/property_4_large.jpg", alt="" class="property__imgbox-img")
+              span.property__item-title 武蔵小山駅周辺物件
+              p.property__item-text 商店街を離れると閑静な住宅街が広がっており、便利さと住みやすさが両立しています。
+          li.property__item
+            a(href="#" class="property__item-link")
+              img(src="src/img/property_5_large.jpg", alt="" class="property__imgbox-img")
+              span.property__item-title 大泉学園駅周辺物件
+              p.property__item-text 閑静な住宅地と、都市計画により買い物環境が充実した駅前街区のある美しい街です。
+        .property__box
+          a(href="#" class="btn")
+      .contact 
+        a(href="#" class="contact__link")
+          span.contact__title お問い合わせ
+          br
+          span.contact__text お気軽にお問い合わせください。
+      section.access
+        h2.access__sectitle
+          span.access__sectitle-en ACCESS
+          sapn.access__sectitle-ja アクセス
+        .access__flex
+          iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.583352184261!2d139.8132971!3d35.710332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa16dd866dfaa5fb9!2z5oq85LiK6aeFKOOCueOCq-OCpOODhOODquODvOWJjSk!5e0!3m2!1sja!2sjp!4v1655163967982!5m2!1sja!2sjp", frameborder="0")
+          ul.access__list
+            - let accesslist = ['Urban rent', 'OPEN 12:00 / CLOSE 21:00', '〒○○○○○○○○', '東京都○○○○○○○○○○○','MAIL：○○○○○○○○○○○']
+            each  item in accesslist
+              li.access__list-item #{item}
+    footer.footer
+      .footer__flex.wrapper
+        .footer__log
+          p.footer__logo-title Urban rent
+        ul.footer__list
+          - let footerlist = ['CONCEPT', 'NEWS', 'FIRST', 'PROPERTY','CONTACT']
+            each  item in footerlist
+              li.footer__list-item 
+                a(href="#" class="footer__list-link") #{item}
+      p.copy &copy; 2022 Urban rent
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&display=swap")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+    script(src="src/js/jquery.inview.min.js")
+    script(src="src/js/main.js")
