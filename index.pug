@@ -8,14 +8,17 @@ html(lang="ja")
     title Urban rent
   body
     header.header
-      .header__hamburger
-        - for (let x = 0; x < 3; x++)
-          span.header__hamburger-line
-      ul.header__list
-        - let list = ['CONCEPT', 'NEWS', 'FIRST', 'PROPERTY','CONTACT',]
-        each  item in list
-          li.header__list-item
-            a(href="#" class="header__list-link") #{item}
+      .header__flex
+        .header__logo
+          p Urban rent
+        .header__hamburger
+          - for (let x = 0; x < 3; x++)
+            span.header__hamburger-line
+        ul.header__list
+          - let list = ['CONCEPT', 'NEWS', 'FIRST', 'PROPERTY','CONTACT',]
+          each  item in list
+            li.header__list-item
+              a(href="#" class="header__list-link") #{item}
     .bg
       .bg__box
         p.bg__box-catch 都会の利便性
@@ -26,15 +29,15 @@ html(lang="ja")
         .live__flex
           .live__textbox.inview.fadeIn
             h2.live__sectitle
-              span.live__sectitl-en LIVE
-              span.live__sectitl-ja 都会で暮らす
+              span.live__sectitle-en LIVE
+              span.live__sectitle-ja 都会で暮らす
             .live__text
               p 東京は家賃が高いイメージがあると思います。
                 br
                 | しかし、意外と家賃相場が安い場所もあります。
                 br
                 | そういった場所を皆様に提供できればと思っております。
-          .live__imgbox
+          .live__imgbox.mask
             img(src="src/img/live_large.jpg", alt="" class="live__imgbox-img")
       section.news
         .news__flex
@@ -89,25 +92,25 @@ html(lang="ja")
               li.about__item
                 a(href="#" class="about__item-link") 
                   span.about__item-number 01
-                  span.about__item-number Urban rentが
-                  br
-                  | 大切にしていること
+                  span.about__item-text Urban rentが
+                    br
+                    | 大切にしていること
               li.about__item
                 a(href="#" class="about__item-link") 
                   span.about__item-number 02
-                  span.about__item-number ヒアリングから物件のご提案
+                  span.about__item-text ヒアリングから物件のご提案
               li.about__item
                 a(href="#" class="about__item-link") 
                   span.about__item-number 03
-                  span.about__item-number ご希望の最寄り駅の
-                  br
-                  | 雰囲気や特徴をご説明
+                  span.about__item-text ご希望の最寄り駅の
+                    br
+                    | 雰囲気や特徴をご説明
               li.about__item
                 a(href="#" class="about__item-link") 
                   span.about__item-number 04
-                  span.about__item-number 入居後の
-                  br
-                  | アフターサポート
+                  span.about__item-text 入居後の
+                    br
+                    | アフターサポート
           .about__imgbox.mask
             picture
               source(media="(min-width: 1025px)", srcset="src/img/about_large.jpg")
@@ -146,7 +149,7 @@ html(lang="ja")
               img(src="src/img/property_4_large.jpg", alt="" class="property__imgbox-img")
               span.property__item-title 武蔵小山駅周辺物件
               p.property__item-text 商店街を離れると閑静な住宅街が広がっており、便利さと住みやすさが両立しています。
-          li.property__item
+          li.property__item.sp
             a(href="#" class="property__item-link")
               img(src="src/img/property_5_large.jpg", alt="" class="property__imgbox-img")
               span.property__item-title 大泉学園駅周辺物件

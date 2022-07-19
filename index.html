@@ -9,15 +9,20 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__hamburger"><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span>
+      <div class="header__flex">
+        <div class="header__logo">
+          <p>Urban rent</p>
+        </div>
+        <div class="header__hamburger"><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span><span class="header__hamburger-line"></span>
+        </div>
+        <ul class="header__list">
+          <li class="header__list-item"><a class="header__list-link" href="#">CONCEPT</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">NEWS</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">FIRST</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">PROPERTY</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#">CONTACT</a></li>
+        </ul>
       </div>
-      <ul class="header__list">
-        <li class="header__list-item"><a class="header__list-link" href="#">CONCEPT</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">NEWS</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">FIRST</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">PROPERTY</a></li>
-        <li class="header__list-item"><a class="header__list-link" href="#">CONTACT</a></li>
-      </ul>
     </header>
     <div class="bg">
       <div class="bg__box">
@@ -28,12 +33,12 @@
       <section class="live wrapper">
         <div class="live__flex">
           <div class="live__textbox inview fadeIn">
-            <h2 class="live__sectitle"><span class="live__sectitl-en">LIVE</span><span class="live__sectitl-ja">都会で暮らす</span></h2>
+            <h2 class="live__sectitle"><span class="live__sectitle-en">LIVE</span><span class="live__sectitle-ja">都会で暮らす</span></h2>
             <div class="live__text">
               <p>東京は家賃が高いイメージがあると思います。<br>しかし、意外と家賃相場が安い場所もあります。<br>そういった場所を皆様に提供できればと思っております。</p>
             </div>
           </div>
-          <div class="live__imgbox"><img class="live__imgbox-img" src="src/img/live_large.jpg" alt=""></div>
+          <div class="live__imgbox mask"><img class="live__imgbox-img" src="src/img/live_large.jpg" alt=""></div>
         </div>
       </section>
       <section class="news">
@@ -77,10 +82,10 @@
           <div class="about__textbox inview fadeIn">
             <div class="about__sectitle"><span class="about__sectitle-en">ABOUT</span><span class="about__sectitle-ja">Urban rentについ</span></div>
             <ul class="about__list">
-              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">01</span><span class="about__item-number">Urban rentが</span><br>大切にしていること</a></li>
-              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">02</span><span class="about__item-number">ヒアリングから物件のご提案</span></a></li>
-              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">03</span><span class="about__item-number">ご希望の最寄り駅の</span><br>雰囲気や特徴をご説明</a></li>
-              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">04</span><span class="about__item-number">入居後の</span><br>アフターサポート</a></li>
+              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">01</span><span class="about__item-text">Urban rentが<br>大切にしていること</span></a></li>
+              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">02</span><span class="about__item-text">ヒアリングから物件のご提案</span></a></li>
+              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">03</span><span class="about__item-text">ご希望の最寄り駅の<br>雰囲気や特徴をご説明</span></a></li>
+              <li class="about__item"><a class="about__item-link" href="#"> <span class="about__item-number">04</span><span class="about__item-text">入居後の<br>アフターサポート</span></a></li>
             </ul>
           </div>
           <div class="about__imgbox mask">
@@ -115,7 +120,7 @@
               <p class="property__item-text">荻窪は、穏やかな雰囲気が特徴の街で、女性でも安心して一人暮らしができるほど治安が良い、とても住みやすい街となっています。</p></a></li>
           <li class="property__item"><a class="property__item-link" href="#"><img class="property__imgbox-img" src="src/img/property_4_large.jpg" alt=""><span class="property__item-title">武蔵小山駅周辺物件</span>
               <p class="property__item-text">商店街を離れると閑静な住宅街が広がっており、便利さと住みやすさが両立しています。</p></a></li>
-          <li class="property__item"><a class="property__item-link" href="#"><img class="property__imgbox-img" src="src/img/property_5_large.jpg" alt=""><span class="property__item-title">大泉学園駅周辺物件</span>
+          <li class="property__item sp"><a class="property__item-link" href="#"><img class="property__imgbox-img" src="src/img/property_5_large.jpg" alt=""><span class="property__item-title">大泉学園駅周辺物件</span>
               <p class="property__item-text">閑静な住宅地と、都市計画により買い物環境が充実した駅前街区のある美しい街です。</p></a></li>
         </ul>
         <div class="property__box"><a class="btn" href="#"></a></div>

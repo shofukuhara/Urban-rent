@@ -1,0 +1,61 @@
+@use '../base/variable' as v;
+
+$breakpoint: (
+  'sp': 'screen and (max-width: 599px)',
+  'tab': 'screen and (min-width: 600px) and (max-width: 1025px)',
+  'pc': 'screen and (min-width: 1025px)'
+);
+
+@mixin mq($size: md) {
+  @media #{ map-get( $breakpoint, $size ) } {
+    @content;
+  }
+}
+
+
+@mixin TabSectitle {
+  &-en {
+    font-size: v.$FontTabSectitleEn;
+    display: block;
+    line-height: 1;
+  }
+  &-ja {
+    font-size: v.$FontTabSectitleJa;
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 8px;
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      background-color: v.$yellow;
+      z-index: -1;
+    }
+  }
+}
+
+
+@mixin PcSectitle {
+  &-en {
+    font-size: v.$FontPcSectitleEn;
+    display: block;
+    line-height: 1;
+  }
+  &-ja {
+    font-size: v.$FontPcSectitleJa;
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      background-color: v.$yellow;
+      z-index: -1;
+    }
+  }
+}

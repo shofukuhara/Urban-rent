@@ -1,0 +1,33 @@
+// color
+$wh: #F8F6F5;
+$gr: #E0E0E0;
+$bl: #000;
+$yellow: #ffff00;
+$bg: #FAFAFA;
+$blu: #ddeafa;
+$gr_bl: #9DA2A6;
+
+// pc
+$FontPcText: 1.6rem;
+$FontPcSectitleJa: 3rem;
+$FontPcSectitleEn: 8rem;
+$FontPcList: 2rem;
+$FontPcAbout: 1.7rem;
+
+// tab
+$FontTabText: calc(1.2rem + 4 * (100vw - 600px) / 424);
+$FontTabSectitleJa: calc(2.4rem + 2 * (100vw - 600px) / 424);
+$FontTabSectitleEn: calc(7.4rem + 2 * (100vw - 600px) / 424);
+$FontTabAbout: calc(1.4rem + 4 * (100vw - 600px) / 424);
+
+// sp
+$fontSpText: calc(12px + 4 * (100vw - 320px) / 379);
+$fontSpSec_tit: calc(28px + 4 * (100vw - 320px) / 379);
+$fontSpSec_titSml: calc(22px + 4 * (100vw - 320px) / 379);
+$fontSpSec_titBack: calc(44px + 4 * (100vw - 320px) / 379);
+$fontSpList: calc(12px + 4 * (100vw - 320px) / 379);
+$fontSpCopy: calc(12px + 4 * (100vw - 320px) / 379);
+$fontSpBtn: calc(12px + 4 * (100vw - 320px) / 379);
+$fontSpNumber: calc(24px + 4 * (100vw - 320px) / 379);
+$fontSpCardDate: calc(12px + 4 * (100vw - 320px) / 379);
+$fontSpCardMore: calc(12px + 4 * (100vw - 320px) / 379);
