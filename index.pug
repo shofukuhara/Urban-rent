@@ -15,10 +15,12 @@ html(lang="ja")
           - for (let x = 0; x < 3; x++)
             span.header__hamburger-line
         ul.header__list
-          - let list = ['CONCEPT', 'NEWS', 'FIRST', 'PROPERTY','CONTACT',]
+          - let list = ['CONCEPT', 'NEWS', 'FIRST', 'PROPERTY',]
           each  item in list
             li.header__list-item
               a(href="#" class="header__list-link") #{item}
+          li.header__list-btn
+            a(href="#" class="header__list-btnlink") CONTACT
     .bg
       .bg__box
         p.bg__box-catch 都会の利便性
