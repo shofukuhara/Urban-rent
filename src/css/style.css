@@ -71,7 +71,7 @@ html {
     background-color: #F8F6F5;
     line-height: 1.8;
     letter-spacing: 0.08em;
-    font-size: calc(12px + 4 * (100vw - 320px) / 379);
+    font-size: calc(1.2rem + 4 * (100vw - 320px) / 379);
     font-family: "Darker Grotesque", sans-serif;
   }
 }
@@ -643,12 +643,12 @@ html {
     margin-bottom: 40px;
   }
   .main .live__sectitle-en {
-    font-size: calc(7.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(5rem + 4 * (100vw - 320px) / 379);
     display: block;
     line-height: 1;
   }
   .main .live__sectitle-ja {
-    font-size: calc(2.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(2.2rem + 4 * (100vw - 320px) / 379);
     display: inline-block;
     position: relative;
   }
@@ -900,12 +900,12 @@ html {
     margin-bottom: 40px;
   }
   .main .news__sectitle-en {
-    font-size: calc(7.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(5rem + 4 * (100vw - 320px) / 379);
     display: block;
     line-height: 1;
   }
   .main .news__sectitle-ja {
-    font-size: calc(2.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(2.2rem + 4 * (100vw - 320px) / 379);
     display: inline-block;
     position: relative;
   }
@@ -1227,7 +1227,7 @@ html {
 }
 @media screen and (max-width: 599px) {
   .main .first {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
   .main .first__textbox {
     width: 100%;
@@ -1238,12 +1238,12 @@ html {
     margin-bottom: 40px;
   }
   .main .first__sectitle-en {
-    font-size: calc(7.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(5rem + 4 * (100vw - 320px) / 379);
     display: block;
     line-height: 1;
   }
   .main .first__sectitle-ja {
-    font-size: calc(2.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(2.2rem + 4 * (100vw - 320px) / 379);
     display: inline-block;
     position: relative;
   }
@@ -1265,19 +1265,19 @@ html {
   .main .first__text::before {
     position: absolute;
     content: "";
-    right: -11px;
-    bottom: -11px;
+    right: -8px;
+    bottom: -8px;
     width: 100%;
-    height: 10px;
+    height: 7px;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
   }
   .main .first__text::after {
     position: absolute;
     content: "";
-    right: -11px;
-    top: 10px;
-    width: 10px;
+    right: -8px;
+    top: 7px;
+    width: 7px;
     height: 100%;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
@@ -1431,7 +1431,7 @@ html {
 @media screen and (max-width: 599px) {
   .main .about {
     width: 86%;
-    margin: 0 auto 160px;
+    margin: 0 auto 120px;
   }
   .main .about__imgbox {
     width: 100%;
@@ -1447,12 +1447,12 @@ html {
     margin-bottom: 40px;
   }
   .main .about__sectitle-en {
-    font-size: calc(7.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(5rem + 4 * (100vw - 320px) / 379);
     display: block;
     line-height: 1;
   }
   .main .about__sectitle-ja {
-    font-size: calc(2.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(2.2rem + 4 * (100vw - 320px) / 379);
     display: inline-block;
     position: relative;
   }
@@ -1478,8 +1478,8 @@ html {
   }
   .main .about__item {
     width: 46%;
-    height: 23vw;
-    margin-bottom: 48px;
+    height: 24vw;
+    margin-bottom: 10vw;
     border: 1px solid #000;
     position: relative;
   }
@@ -1489,19 +1489,19 @@ html {
   .main .about__item::before {
     position: absolute;
     content: "";
-    right: -11px;
-    bottom: -11px;
+    right: -8px;
+    bottom: -8px;
     width: 100%;
-    height: 10px;
+    height: 7px;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
   }
   .main .about__item::after {
     position: absolute;
     content: "";
-    right: -11px;
-    top: 10px;
-    width: 10px;
+    right: -8px;
+    top: 7px;
+    width: 7px;
     height: 100%;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
@@ -1515,18 +1515,18 @@ html {
   .main .about__item-number {
     position: absolute;
     color: #A09A91;
-    font-size: 3rem;
-    top: 5px;
+    font-size: calc(2rem + 4 * (100vw - 320px) / 379);
+    top: 3px;
     left: 10px;
     line-height: 1;
   }
   .main .about__item-text {
-    font-size: calc(1.4rem + 4 * (100vw - 600px) / 424);
+    font-size: calc(1rem + 4 * (100vw - 600px) / 424);
     color: #000;
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1780,18 +1780,18 @@ html {
   .main .property__textbox {
     width: 100%;
     height: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .main .property__sectitle {
     margin-bottom: 40px;
   }
   .main .property__sectitle-en {
-    font-size: calc(7.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(5rem + 4 * (100vw - 320px) / 379);
     display: block;
     line-height: 1;
   }
   .main .property__sectitle-ja {
-    font-size: calc(2.4rem + 2 * (100vw - 600px) / 424);
+    font-size: calc(2.2rem + 4 * (100vw - 320px) / 379);
     display: inline-block;
     position: relative;
   }
@@ -1813,19 +1813,19 @@ html {
   .main .property__text::before {
     position: absolute;
     content: "";
-    right: -11px;
-    bottom: -11px;
+    right: -8px;
+    bottom: -8px;
     width: 100%;
-    height: 10px;
+    height: 7px;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
   }
   .main .property__text::after {
     position: absolute;
     content: "";
-    right: -11px;
-    top: 10px;
-    width: 10px;
+    right: -8px;
+    top: 7px;
+    width: 7px;
     height: 100%;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
@@ -1864,19 +1864,19 @@ html {
   .main .property__item::before {
     position: absolute;
     content: "";
-    right: -11px;
-    bottom: -11px;
+    right: -8px;
+    bottom: -8px;
     width: 100%;
-    height: 10px;
+    height: 7px;
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
   }
   .main .property__item::after {
     position: absolute;
     content: "";
-    right: -11px;
-    top: 10px;
-    width: 10px;
+    right: -8px;
+    top: 7px;
+    width: 7px;
     height: 100%;
     border-top: 1px solid #000;
     border-right: 1px solid #000;
@@ -1897,12 +1897,13 @@ html {
     display: block;
     background-color: #a09a91;
     color: #F8F6F5;
-    padding: 10px 0;
-    font-size: 1.8rem;
+    padding: 4px 0;
+    font-size: 1rem;
   }
   .main .property__item-text {
-    padding: 0 20px;
+    padding: 0 2px;
     color: #000;
+    font-size: 1rem;
   }
   .main .property__box {
     text-align: right;

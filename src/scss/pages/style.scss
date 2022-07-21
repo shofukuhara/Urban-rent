@@ -524,7 +524,7 @@ body {
         margin-bottom: 80px;
       }
       &__sectitle {
-        @include m.TabSectitle;
+        @include m.SpSectitle;
         margin-bottom: 40px;
       }
       &__text {
@@ -708,7 +708,7 @@ body {
         margin-bottom: 60px;
       }
       &__sectitle {
-        @include m.TabSectitle;
+        @include m.SpSectitle;
         margin-bottom: 40px;
       }
       &__list {
@@ -944,7 +944,7 @@ body {
   }
   .first {
     @include m.mq('sp') {
-      margin-bottom: 160px;
+      margin-bottom: 120px;
       &__flex {
       }
       &__textbox {
@@ -953,7 +953,7 @@ body {
         margin-bottom: 80px;
       }
       &__sectitle {
-        @include m.TabSectitle;
+        @include m.SpSectitle;
         margin-bottom: 40px;
       }
       &__text {
@@ -963,19 +963,19 @@ body {
         &::before {
           position: absolute;
           content: "";
-          right: -11px;
-          bottom: -11px;
+          right: -8px;
+          bottom: -8px;
           width: 100%;
-          height: 10px;
+          height: 7px;
           border-bottom: 1px solid v.$bl;
           border-left: 1px solid v.$bl;
         }
         &::after {
           position: absolute;
           content: "";
-          right: -11px;
-          top: 10px;
-          width: 10px;
+          right: -8px;
+          top: 7px;
+          width: 7px;
           height: 100%;
           border-top: 1px solid v.$bl;
           border-right: 1px solid v.$bl;
@@ -1085,7 +1085,7 @@ body {
   .about {
     @include m.mq('sp') {
       width: 86%;
-      margin: 0 auto 160px;
+      margin: 0 auto 120px;
       &__flex {
       }
       &__imgbox {
@@ -1099,7 +1099,7 @@ body {
         width: 100%;
       }
       &__sectitle {
-        @include m.TabSectitle;
+        @include m.SpSectitle;
         margin-bottom: 40px;
       }
       &__list {
@@ -1109,8 +1109,8 @@ body {
       }
       &__item {
         width: 46%;
-        height: 23vw;
-        margin-bottom: 48px;
+        height: 24vw;
+        margin-bottom: 10vw;
         border: 1px solid v.$bl;
         position: relative;
         &:hover {
@@ -1119,19 +1119,19 @@ body {
         &::before {
           position: absolute;
           content: "";
-          right: -11px;
-          bottom: -11px;
+          right: -8px;
+          bottom: -8px;
           width: 100%;
-          height: 10px;
+          height: 7px;
           border-bottom: 1px solid v.$bl;
           border-left: 1px solid v.$bl;
         }
         &::after {
           position: absolute;
           content: "";
-          right: -11px;
-          top: 10px;
-          width: 10px;
+          right: -8px;
+          top: 7px;
+          width: 7px;
           height: 100%;
           border-top: 1px solid v.$bl;
           border-right: 1px solid v.$bl;
@@ -1145,18 +1145,18 @@ body {
         &-number {
           position: absolute;
           color: #A09A91;
-          font-size: 3rem;
-          top: 5px;
+          font-size: v.$fontSpNumber;
+          top: 3px;
           left: 10px;
           line-height: 1;
         }
         &-text {
-          font-size: v.$FontTabAbout;
+          font-size: v.$FontSpAbout;
           color: v.$bl;
           text-align: center;
           width: 100%;
           position: absolute;
-          top: 90%;
+          top: 100%;
           left: 50%;
           transform: translate(-50%, -50%);
         }
@@ -1346,10 +1346,10 @@ body {
       &__textbox {
         width: 100%;
         height: 300px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
       }
       &__sectitle {
-        @include m.TabSectitle;
+        @include m.SpSectitle;
         margin-bottom: 40px;
       }
       &__text {
@@ -1359,19 +1359,19 @@ body {
         &::before {
           position: absolute;
           content: "";
-          right: -11px;
-          bottom: -11px;
+          right: -8px;
+          bottom: -8px;
           width: 100%;
-          height: 10px;
+          height: 7px;
           border-bottom: 1px solid v.$bl;
           border-left: 1px solid v.$bl;
         }
         &::after {
           position: absolute;
           content: "";
-          right: -11px;
-          top: 10px;
-          width: 10px;
+          right: -8px;
+          top: 7px;
+          width: 7px;
           height: 100%;
           border-top: 1px solid v.$bl;
           border-right: 1px solid v.$bl;
@@ -1403,19 +1403,19 @@ body {
         &::before {
           position: absolute;
           content: "";
-          right: -11px;
-          bottom: -11px;
+          right: -8px;
+          bottom: -8px;
           width: 100%;
-          height: 10px;
+          height: 7px;
           border-bottom: 1px solid v.$bl;
           border-left: 1px solid v.$bl;
         }
         &::after {
           position: absolute;
           content: "";
-          right: -11px;
-          top: 10px;
-          width: 10px;
+          right: -8px;
+          top: 7px;
+          width: 7px;
           height: 100%;
           border-top: 1px solid v.$bl;
           border-right: 1px solid v.$bl;
@@ -1436,12 +1436,13 @@ body {
           display: block;
           background-color: #a09a91;
           color: v.$wh;
-          padding: 10px 0;
-          font-size: 1.8rem;
+          padding: 4px 0;
+          font-size: 1rem;
         }
         &-text {
-          padding: 0 20px;
+          padding: 0 2px;
           color: v.$bl;
+          font-size: 1rem;
         }
       }
       &__box {
