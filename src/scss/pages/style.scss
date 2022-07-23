@@ -184,14 +184,14 @@ body {
       height: 60px;
       cursor: pointer;
       text-align: center;
-      background-color: #9da2a683;
+      background-color: #9da2a6ce;
       &-line {
         display : block;
         position: absolute;
         width: 30px;
         height: 1px;
         left: 16px;
-        background :#A09A91;
+        background :v.$wh;
         -webkit-transition: 0.1s ease-in-out;
         -moz-transition   : 0.1s ease-in-out;
         transition: .3s ease;
@@ -282,14 +282,14 @@ body {
       height: 60px;
       cursor: pointer;
       text-align: center;
-      background-color: #9da2a683;
+      background-color: #9da2a6ce;
       &-line {
         display : block;
         position: absolute;
         width: 30px;
         height: 1px;
         left: 16px;
-        background :#A09A91;
+        background :v.$wh;
         -webkit-transition: 0.1s ease-in-out;
         -moz-transition   : 0.1s ease-in-out;
         transition: .3s ease;
@@ -436,18 +436,16 @@ body {
     position: relative;
     &__box {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
-      width: 500px;
-      height: 200px;
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
       &-catch {
         position: absolute;
         color: #ffffff;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 100%;
-        font-size: 2rem;
+        font-size: calc(3rem + 4 * (100vw - 320px) / 379);
         letter-spacing: 0.4em;
         text-align: center;
       }
@@ -464,9 +462,8 @@ body {
     position: relative;
     &__box {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
-      // background-color: rgba(255, 255, 255, 0.786);
+      bottom: 10px;
+      right: 0;
       width: 500px;
       height: 200px;
       &-catch {
@@ -476,7 +473,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        font-size: 2rem;
+        font-size: calc(4rem + 2 * (100vw - 600px) / 424);
         letter-spacing: 0.4em;
         text-align: center;
       }
@@ -664,7 +661,6 @@ body {
       left: -100%;
       overflow: hidden;
       width: 100%;
-      transition: all .3s ease-out;
       .mask-bg{
         position: absolute;
         left: 0;
@@ -672,7 +668,6 @@ body {
         width: 100%;
         height: 100%;
         background: #F8F6F5;
-        transition: all .3s ease-out;
       }
     }
   }
@@ -1440,9 +1435,13 @@ body {
           font-size: 1rem;
         }
         &-text {
-          padding: 0 2px;
+          padding: 0 10px;
           color: v.$bl;
           font-size: 1rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
         }
       }
       &__box {
@@ -1681,7 +1680,31 @@ body {
   }
   .contact {
     @include m.mq('sp') {
-      
+      background-image: url(/src/img/contact_small.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 300px;
+      position: relative;
+      margin-bottom: 80px;
+      &__link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        background-color: #a09a91;
+        color: v.$wh;
+        text-align: center;
+        padding: 20px 0;
+      }
+      &__title {
+        font-weight: bold;
+        font-size: 1.8rem;
+      }
+      &__text {
+        font-size: 1.2rem;
+      }
     }
     @include m.mq('tab') {
       background-image: url(/src/img/contact_large.jpg);
@@ -1740,7 +1763,26 @@ body {
   }
   .access {
     @include m.mq('sp') {
-      
+      width: 86%;
+      margin: 0 auto 120px;
+      &__sectitle {
+        @include m.SpSectitle;
+        margin-bottom: 40px;
+      }
+      &__flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      iframe {
+        width: 100%;
+        height: 360px;
+        order: 2;
+      }
+      &__list {
+        width: 100%;
+        order: 1;
+        margin-bottom: 40px;
+      }
     }
     @include m.mq('tab') {
       width: 86%;
@@ -1790,7 +1832,36 @@ body {
 
 .footer {
   @include m.mq('sp') {
-    
+    background-color: #9DA2A6;
+    &__flex {
+      // display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 0 20px;
+      width: 86%;
+    }
+    &__logo {
+      &-title{
+        font-size: 3rem;
+        line-height: 1;
+        color: v.$wh;
+      }
+    }
+    &__list {
+      display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+      &-item {
+        margin: 6px;
+      }
+      &-link {
+        color: v.$wh;
+      }
+    }
+  }
+  .copy {
+    text-align: center;
+    padding: 10px 0;
   }
   @include m.mq('tab') {
     background-color: #9DA2A6;

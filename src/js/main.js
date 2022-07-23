@@ -7,7 +7,7 @@ $(function () {
 });
 
 $(function () {
-  speed = 6000;
+  speed = 8000;
   easing = "easeInOutCubic";
   // タグ生成
   $(".mask").wrap("<div class='mask-wrap'>");
